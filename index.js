@@ -1,7 +1,5 @@
-function openMenu() {
-    document.body.classList += " menu--open"
-}
-
-function closeMenu() {
-    document.body.classList.remove('menu--open')
+let count = 1
+while ( count < 5) {
+    console.log('This ran')
+    count = count + 1
 }
