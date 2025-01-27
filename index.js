@@ -1,45 +1,9 @@
-/**
- * WHILE LOOP
- * Same as "IF STATEMENT"
- */
-/**
- * 
- 
-let count = 1
-while ( count <= 6) {
-    console.log('This ran')
-    count = count + 1
-}
-let newCount = 1
-while (newCount <= 10) {
-    console.log(newCount)
-    newCount = newCount + 1
-}
+/** 
+ * PRINTING STRINGS
 */
-/**
- * FOR LOOP
- */
-// "I" is the INITIALIZER, ALWAYS USE
-for (let i = 0; i < 3; i++) { // Instead of "i = i + 1", it is simpler to use "i++"
-    console.log(i)
+const str = "Frontend Simplified" // Using "const" because we aren't REASIGNING. We can use "let" if we want.
+for (let i = 0; i < str.length; i++) { // ".length" lets you LOOP INDEX OF STRING
+    console.log(str[i]) // "str[i]" lets you print out the LETTERS
 }
-for (let i = 1; i <= 20; i++) {
-    /**
-     * CANNOT PRINT "i % 3", will check the REMAINDER
-     * Will print "0", which is a FALSY value. 
-     * "=== 0" will check if its EQUAL to 0.  
-     */
-    console.log(i)
-    if (i % 3 === 0 && i % 5 === 0) {
-        console.log('Front-End')
-    }
-    else if (i % 3 === 0) {
-        console.log('Simplified')
-    }
-    else if (i % 5 === 0) {
-        console.log('Front-End Simplified')
-    }
-    else {
-        console.log(i)
-    }
-}
+
+
