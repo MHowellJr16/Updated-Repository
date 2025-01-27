@@ -1,9 +1,9 @@
-/** 
- * PRINTING STRINGS
-*/
-const str = "Frontend Simplified" // Using "const" because we aren't REASIGNING. We can use "let" if we want.
-for (let i = 0; i < str.length; i++) { // ".length" lets you LOOP INDEX OF STRING
-    console.log(str[i]) // "str[i]" lets you print out the LETTERS
+/**
+ * FUNCTIONS
+ */
+// function DEFINITION
+function welcomeMark(name) { // Anything inside "()" is a PARAMATER
+    console.log("Welcome to FES, " + name)
 }
-
-
+// CALLING the function
+welcomeMark('Mark'); // you EXECUTE funtion by CALLING, or writing it individually. 
