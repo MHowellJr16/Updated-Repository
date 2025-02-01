@@ -63,3 +63,36 @@ if (grades[i] !== 'FAIL') {
 console.log(goodGrades);
 //
 let bestArray = [4, 9, 10]
+/**
+ * MAPPING
+ */
+// Used when you want to CHANGE and element in your array
+// Regular Method, same as FILTER
+let mapArray = [1, 3, 45, 67]
+mapArray.map((element) => {
+    console.log(element)
+})
+//CHANGE METHOD
+let newMapArray = mapArray.map((element) => {
+    console.log(element)
+    return undefined;
+}) // EVERY ELEMENT IS CHANGED to "undefined", whatever is "returned" will be PRINTED. 
+console.log(newMapArray)
+// Can also do this on ONE LINE OF CODE
+let bestMapArray = mapArray.map((element) => 'Daddy')
+console.log(bestMapArray)
+// DOLLAR EQUATION
+let dollars = [1, 10, 9, 25]
+let cents = dollars.map(element => {
+    return element * 100
+})
+console.log(cents)
+// One line of code
+let newCents = dollars.map((element) => element * 100)
+console.log(newCents)
+// FOR LOOP
+let realCentsArray = []
+for (let i = 0; i < dollars.length; i++) {
+    realCentsArray.push(dollars[i] * 200);
+}
+console.log(realCentsArray)
