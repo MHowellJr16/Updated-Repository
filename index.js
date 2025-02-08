@@ -68,8 +68,17 @@ function register(username, email, password, discordID) {
 }
 register('Mark', 'capwiz28@yahoo.com', 'ThisPassword', 'Howell92');
 */
-function register(username, email, password, subscriptionStatus, discordID, lessonsCompleted) {
-    console.log(email, password)
-}
-register('Mark', 'MHowellJr16@gmail.com', 'Mark.Howell', 'VIP', 'Howell123', [0, 1]);
+function register(user) {
+    users.push(user);
+    }
+
+register( {
+    username: 'Mark', 
+    email: 'MHowellJr16@gmail.com', 
+    password: 'Mark.Howell', 
+    subscriptionStatus: 'VIP', 
+    discordID: 'Howell123', 
+    lessonsCompleted: [0, 1]
+    }); 
 // TIME MARK 14:58
+console.log(users);
